@@ -25,12 +25,12 @@
                         "activeTab" : "active"
                     },
                     {
-                        "title": "Attestations",
-                        "redirectTo": "/institute/attestation/institute-attestation"
-                    },
-                    {
                         "title": "Courses",
                         "redirectTo": "/institute/courses"
+                    },
+                    {
+                        "title": "Skills",
+                        "redirectTo": "/institute/skills"
                     }
                 ],
                 "right": [
@@ -72,6 +72,10 @@
                     {
                         "title": "Courses",
                         "redirectTo": "/Student/courses"
+                    },
+                    {
+                        "title": "Certificates",
+                        "redirectTo": "/Student/certificates"
                     }
                 ],
                 "right": [
