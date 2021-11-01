@@ -31,6 +31,10 @@
                     {
                         "title": "Skills",
                         "redirectTo": "/institute/skills"
+                    },
+                    {
+                        "title": "Issue certificate",
+                        "redirectTo": "/issue-certificate"
                     }
                 ],
                 "right": [
@@ -77,6 +81,7 @@
                         "title": "Certificates",
                         "redirectTo": "/Student/certificates"
                     }
+                    
                 ],
                 "right": [
                     {
