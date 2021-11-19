@@ -25,16 +25,8 @@
                         "activeTab" : "active"
                     },
                     {
-                        "title": "Courses",
-                        "redirectTo": "/institute/courses"
-                    },
-                    {
-                        "title": "Skills",
-                        "redirectTo": "/institute/skills"
-                    },
-                    {
                         "title": "Issue certificate",
-                        "redirectTo": "/issue-certificate"
+                        "redirectTo": "/form/issue"
                     }
                 ],
                 "right": [
@@ -72,10 +64,6 @@
                     {
                         "title": "Home",
                         "redirectTo": "/profile/student"
-                    },
-                    {
-                        "title": "Courses",
-                        "redirectTo": "/Student/courses"
                     },
                     {
                         "title": "Certificates",

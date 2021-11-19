@@ -17,64 +17,31 @@
                         "editform":"institute-setup",
                         "fields": {
                             "includes": ["*"],
-                            "excludes": ["affiliation"]
+                            "excludes": ["courses","skills"]
                         }
                     },
                     {
                         "definition": "Institute",
-                        "title": "Affiliation details",
+                        "title": "Courses",
                         "add": true,
-                        "addform":"affiliation",
+                        "addform":"course",
                         "claimEdit": true,
-                        "editform":"affiliation",
+                        "editform":"course",
                         "multiple": true,
                         "fields": {
-                            "includes": ["affiliation"]
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "teacher": {
-                "api": "/Teacher",
-                "title": "Teacher Profile",
-                "headerName" : "identityDetails.fullName",
-                "subHeadername" : "contactDetails.address.state,contactDetails.address.city",
-                "blocks": [
-                    {
-                        "definition": "Teacher",
-                        "title": "Personal details",
-                        "add": false,
-                        "edit": true,
-                        "editform":"teacher-setup",
-                        "fields": {
-                            "includes": ["*"],
-                            "excludes": ["experience","academicQualifications"]
+                            "includes": ["courses"]
                         }
                     },
                     {
-                        "definition": "Teacher",
-                        "title": "Professional Experience",
+                        "definition": "Institute",
+                        "title": "Skills",
                         "add": true,
-                        "addform":"teacher-experience",
-                        "editform":"teacher-experience",
+                        "addform":"skill",
                         "claimEdit": true,
+                        "editform":"skill",
                         "multiple": true,
                         "fields": {
-                            "includes": ["experience"]
-                        }
-                    },
-                    {
-                        "definition": "Teacher",
-                        "title": "Education",
-                        "add": true,
-                        "addform":"teacher-education",
-                        "editform":"teacher-education",
-                        "claimEdit": true,
-                        "multiple": true,
-                        "fields": {
-                            "includes": ["academicQualifications"]
+                            "includes": ["skills"]
                         }
                     }
                 ]
@@ -96,19 +63,6 @@
                         "fields": {
                             "includes": ["*"],
                             "excludes": ["educationDetails"]
-                        }
-                    },
-                    {
-                        "definition": "Student",
-                        "title": "Education details",
-                        "add": true,
-                        "addform":"student-education",
-                        "editform":"student-education",
-                        "edit": false,
-                        "claimEdit": true,
-                        "multiple": true,
-                        "fields": {
-                            "includes": ["educationDetails"]
                         }
                     }
                 ]
