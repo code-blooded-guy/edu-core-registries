@@ -212,40 +212,14 @@
                             {
                                 "name": "course",
                                 "required": true,
-                                "hideExpression":"model.certificateType != 'Attendance'",
-                                "autocomplete": {
-                                    "apiURL": "https://ndear.xiv.in/skills/api/v1/Institute/search",
-                                    "method": "POST",
-                                    "body": {
-                                        "filters": {
-                                            "courses.name": {
-                                                "startsWith": "{{value}}"
-                                            }
-                                        },
-                                        "limit": 20,
-                                        "offset": 0
-                                    },
-                                    "responseKey": "courses.name"
-                                }
+                                "hideExpression":"model.certificateType != 'Attendance'"
+                            
                             },
                             {
                                 "name": "skill",
                                 "required": true,
-                                "hideExpression":"model.certificateType != 'Skill'",
-                                "autocomplete": {
-                                    "apiURL": "https://ndear.xiv.in/skills/api/v1/Institute/search",
-                                    "method": "POST",
-                                    "body": {
-                                        "filters": {
-                                            "skills": {
-                                                "contains": "{{value}}"
-                                            }
-                                        },
-                                        "limit": 20,
-                                        "offset": 0
-                                    },
-                                    "responseKey": "name"
-                                }
+                                "hideExpression":"model.certificateType != 'Skill'"
+                              
                             },
                             {
                                 "name": "grades",
