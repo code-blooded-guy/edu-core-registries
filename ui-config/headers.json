@@ -64,10 +64,6 @@
                     {
                         "title": "Home",
                         "redirectTo": "/profile/student"
-                    },
-                    {
-                        "title": "Certificates",
-                        "redirectTo": "/Student/certificates"
                     }
                     
                 ],

@@ -186,7 +186,7 @@
         {
             "issue": {
                 "api": "/Certificates",
-                "type": "entity",
+                "type": "passport:Student",
                 "header": "institute",
                 "title": "Issue Certificate",
                 "redirectTo": "/profile/institute",
@@ -204,10 +204,12 @@
                                 "required": true
                             },
                             {
-                                "name": "mobile"
+                                "name": "mobile",
+                                "required": true
                             },
                             {
-                                "name": "email"
+                                "name": "email",
+                                "required": true
                             },
                             {
                                 "name": "course",
