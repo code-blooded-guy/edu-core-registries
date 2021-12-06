@@ -3,47 +3,23 @@
     "version": "0.1",
     "layouts": [
         {
-            "institute": {
-                "api": "/Institute",
-                "title": "Institute Profile",
-                "headerName" : "instituteName",
-                "subHeadername" : "address.state,contactDetails.address.city",
+            "user": {
+                "api": "User",
+                "title": "My Profile",
+                "headerName" : "identityDetails.fullName",
+                "subHeadername" : "contactDetails.address.state,contactDetails.address.city",
                 "blocks": [
                     {
-                        "definition": "Institute",
-                        "title": "Institute details",
+                        "definition": "User",
+                        "title": "User details",
                         "add": false,
                         "edit": true,
-                        "editform":"institute-setup",
+                        "editform":"user-setup",
                         "fields": {
-                            "includes": ["*"],
-                            "excludes": ["courses","skills"]
-                        }
-                    },
-                    {
-                        "definition": "Institute",
-                        "title": "Courses",
-                        "add": true,
-                        "addform":"course",
-                        "claimEdit": true,
-                        "editform":"course",
-                        "multiple": true,
-                        "fields": {
-                            "includes": ["courses"]
-                        }
-                    },
-                    {
-                        "definition": "Institute",
-                        "title": "Skills",
-                        "add": true,
-                        "addform":"skill",
-                        "claimEdit": true,
-                        "editform":"skill",
-                        "multiple": true,
-                        "fields": {
-                            "includes": ["skills"]
+                            "includes": ["*"]
                         }
                     }
+                    
                 ]
             }
         },

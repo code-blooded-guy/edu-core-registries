@@ -17,16 +17,38 @@
             }
         },
         {
-            "institute": {
+            "user":{
                 "left": [
                     {
-                        "title": "Home",
-                        "redirectTo": "/profile/institute",
+                        "title": "Documents",
+                        "redirectTo": "/documents",
                         "activeTab" : "active"
                     },
                     {
-                        "title": "Issue certificate",
-                        "redirectTo": "/form/issue"
+                        "title": "Profile",
+                        "redirectTo": "/profile/User"
+                    }
+                ],
+                "right": [
+                    {
+                        "title": "Logout",
+                        "redirectTo": "/logout",
+                        "className" : "font-weight-bold"
+                    }
+                ]
+            }
+        },
+        {
+            "documents": {
+                "left": [
+                    {
+                        "title": "Documents",
+                        "redirectTo": "/documents",
+                        "activeTab" : "active"
+                    },
+                    {
+                        "title": "Profile",
+                        "redirectTo": "/profile/User"
                     }
                 ],
                 "right": [
