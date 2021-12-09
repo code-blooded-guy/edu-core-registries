@@ -62,7 +62,7 @@
                         ]
                     }
                 ],
-                "redirectTo": "/profile/institute"
+                "redirectTo": "/User/documents"
             }
         },
         {
@@ -91,7 +91,7 @@
                         ]
                     }
                 ],
-                "redirectTo": "/profile/institute"
+                "redirectTo": "/User/institute"
             }
         },
         {

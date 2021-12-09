@@ -21,7 +21,7 @@
                 "left": [
                     {
                         "title": "Documents",
-                        "redirectTo": "/documents",
+                        "redirectTo": "/User/documents",
                         "activeTab" : "active"
                     },
                     {
@@ -43,7 +43,7 @@
                 "left": [
                     {
                         "title": "Documents",
-                        "redirectTo": "/documents",
+                        "redirectTo": "/User/documents",
                         "activeTab" : "active"
                     },
                     {
