@@ -8,10 +8,28 @@
         },
         {
             "default":{
+                "left": [
+                    {
+                        "title": "About",
+                        "redirectTo": "/page/about"
+                    },
+                    {
+                        "title": "Terms and Conditions",
+                        "redirectTo": "/page/terms-and-conditions"
+                    }
+                ],
                 "right":[
                     {
                         "title": "Login",
                         "redirectTo": "/login"
+                    },
+                    {
+                        "title": "About",
+                        "redirectTo": "/page/about"
+                    },
+                    {
+                        "title": "Terms and Conditions",
+                        "redirectTo": "/page/terms-and-conditions"
                     }
                 ]
             }
@@ -27,14 +45,24 @@
                     {
                         "title": "Profile",
                         "redirectTo": "/profile/User"
+                    },
+                    {
+                        "title": "About",
+                        "redirectTo": "/page/about"
+                    },
+                    {
+                        "title": "Terms and Conditions",
+                        "redirectTo": "/page/terms-and-conditions"
                     }
                 ],
                 "right": [
+                    
                     {
                         "title": "Logout",
                         "redirectTo": "/logout",
                         "className" : "font-weight-bold"
                     }
+                    
                 ]
             }
         },
@@ -49,66 +77,22 @@
                     {
                         "title": "Profile",
                         "redirectTo": "/profile/User"
+                    },
+                    {
+                        "title": "About",
+                        "redirectTo": "/page/about"
+                    },
+                    {
+                        "title": "Terms and Conditions",
+                        "redirectTo": "/page/terms-and-conditions"
                     }
                 ],
                 "right": [
+                    
                     {
                         "title": "Logout",
                         "redirectTo": "/logout",
                         "className" : "font-weight-bold"
-                    }
-                ]
-            }
-        },
-        {
-            "teacher": {
-                "left": [
-                    {
-                        "title": "Home",
-                        "redirectTo": "/profile/teacher"
-                    },
-                    {
-                        "title": "Attestations",
-                        "redirectTo": "/teacher/attestation/teacher-attestation"
-                    }
-                ],
-                "right": [
-                    {
-                        "image": "/assets/images/logout.png",
-                        "redirectTo": "/logout"
-                    }
-                ]
-            }
-        },
-        {
-            "student": {
-                "left": [
-                    {
-                        "title": "Home",
-                        "redirectTo": "/profile/student"
-                    }
-                    
-                ],
-                "right": [
-                    {
-                        "image": "/assets/images/logout.png",
-                        "redirectTo": "/logout"
-                    }
-                ]
-            }
-        },
-        {
-            "board-cbse": {
-                "left": [
-                    {
-                        "title": "Attestations",
-                        "redirectTo": "/profile/board-cbse"
-                    }
-                ],
-                "right": [
-                    {
-                        "image": "/assets/images/logout.png",
-                        "redirectTo": "/logout"
                     }
                 ]
             }
