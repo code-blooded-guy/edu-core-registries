@@ -10,25 +10,25 @@
             "default":{
                 "left": [
                     {
-                        "title": "About",
+                        "title": "ABOUT",
                         "redirectTo": "/page/about"
                     },
                     {
-                        "title": "Terms and Conditions",
+                        "title": "TERMS_AND_CONDITIONS",
                         "redirectTo": "/page/terms-and-conditions"
                     }
                 ],
                 "right":[
                     {
-                        "title": "Login",
+                        "title": "LOGIN",
                         "redirectTo": "/login"
                     },
                     {
-                        "title": "About",
+                        "title": "ABOUT",
                         "redirectTo": "/page/about"
                     },
                     {
-                        "title": "Terms and Conditions",
+                        "title": "TERMS_AND_CONDITIONS",
                         "redirectTo": "/page/terms-and-conditions"
                     }
                 ]
@@ -38,27 +38,27 @@
             "user":{
                 "left": [
                     {
-                        "title": "Documents",
+                        "title": "DOCUMENTS",
                         "redirectTo": "/User/documents",
                         "activeTab" : "active"
                     },
                     {
-                        "title": "Profile",
+                        "title": "PROFILE",
                         "redirectTo": "/profile/User"
                     },
                     {
-                        "title": "About",
+                        "title": "ABOUT",
                         "redirectTo": "/page/about"
                     },
                     {
-                        "title": "Terms and Conditions",
+                        "title": "TERMS_AND_CONDITIONS",
                         "redirectTo": "/page/terms-and-conditions"
                     }
                 ],
                 "right": [
                     
                     {
-                        "title": "Logout",
+                        "title": "LOGOUT",
                         "redirectTo": "/logout",
                         "className" : "font-weight-bold"
                     }
@@ -70,27 +70,27 @@
             "documents": {
                 "left": [
                     {
-                        "title": "Documents",
+                        "title": "DOCUMENTS",
                         "redirectTo": "/User/documents",
                         "activeTab" : "active"
                     },
                     {
-                        "title": "Profile",
+                        "title": "PROFILE",
                         "redirectTo": "/profile/User"
                     },
                     {
-                        "title": "About",
+                        "title": "ABOUT",
                         "redirectTo": "/page/about"
                     },
                     {
-                        "title": "Terms and Conditions",
+                        "title": "TERMS_AND_CONDITIONS",
                         "redirectTo": "/page/terms-and-conditions"
                     }
                 ],
                 "right": [
                     
                     {
-                        "title": "Logout",
+                        "title": "LOGOUT",
                         "redirectTo": "/logout",
                         "className" : "font-weight-bold"
                     }

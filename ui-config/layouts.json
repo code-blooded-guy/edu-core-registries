@@ -5,13 +5,14 @@
         {
             "user": {
                 "api": "User",
-                "title": "My Profile",
+                "title": "MY_PROFILE",
+                "langKey": "elocker",
                 "headerName" : "identityDetails.fullName",
                 "subHeadername" : "contactDetails.address.state,contactDetails.address.city",
                 "blocks": [
                     {
                         "definition": "User",
-                        "title": "User details",
+                        "title": "USER_DETAILS",
                         "add": false,
                         "edit": true,
                         "editform":"user-setup",
@@ -28,6 +29,7 @@
                 "api": "/Student",
                 "title": "Student Profile",
                 "headerName" : "identityDetails.fullName",
+                "langKey": "elocker",
                 "subHeadername" : "contactDetails.address.state,contactDetails.address.city",
                 "blocks": [
                     {

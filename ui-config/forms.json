@@ -8,8 +8,9 @@
                 "type": "entity",
                 "formclass": "row",
                 "header": "default",
-                "title": "Register",
+                "title": "REGISTER",
                 "isSignupForm":"true",
+                "langKey": "elocker",
                 "fieldsets": [
                     {
                         "definition": "User",
@@ -35,7 +36,7 @@
                                             "required": true,
                                             "validation": {
                                                 "pattern": "[6-9]{1}[0-9]{9}",
-                                                "message": "Mobile Number must be 10 digit number."
+                                                "message": "MOBILE_NO_MUST_10_DIGIT"
                                             }
                                         }
                                     ]
@@ -46,7 +47,7 @@
                                 "custom": true,
                                 "required": true,
                                 "element": {
-                                    "title": "I accept Terms & Conditions ",
+                                    "title": "ACCEPT_TERMS_CONDITIONS ",
                                     "widget": {
                                         "formlyConfig": {
                                             "type": "checkbox",
@@ -69,13 +70,14 @@
             "user-setup": {
                 "api": "/User",
                 "type": "entity",
-                "title": "User Details",
+                "title": "USER_DETAILS",
+                "langKey": "elocker",
                 "fieldsets": [
                     {
                         "definition": "User",
                         "privacyConfig": "UserOsConfig",
                         "globalPrivacyConfig": "public-access",
-                        "title": "Basic details",
+                        "title": "BASIC_DETAILS",
                         "fields": [
                             {
                                 "name": "identityDetails",
@@ -98,7 +100,7 @@
             "course": {
                 "api": "/Institute",
                 "type": "property:courses",
-                "title": "Courses",
+                "title": "COURSES",
                 "redirectTo": "/profile/institute",
                 "fieldsets": [
                     {
@@ -118,7 +120,7 @@
             "skill": {
                 "api": "/Institute",
                 "type": "property:skills",
-                "title": "Skills",
+                "title": "SKILLS",
                 "redirectTo": "/profile/institute",
                 "fieldsets": [
                     {
@@ -139,7 +141,7 @@
                 "api": "/Certificates",
                 "type": "passport:Student",
                 "header": "institute",
-                "title": "Issue Certificate",
+                "title": "ISSUE_CERTIFICATE",
                 "redirectTo": "/profile/institute",
                 "fieldsets": [
                     {
@@ -290,7 +292,7 @@
                                             "required": true,
                                             "validation": {
                                                 "pattern": "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z0-9.-]+$",
-                                                "message": "Email is not valid."
+                                                "message": "EMAILT_NOT_VALID"
                                             }
                                         },
                                         {
@@ -298,7 +300,7 @@
                                             "required": true,
                                             "validation": {
                                                 "pattern": "[6-9]{1}[0-9]{9}",
-                                                "message": "Mobile Number must be 10 digit number."
+                                                "message": "MOBILE_NO_MUST_10_DIGIT"
                                             }
                                         }
                                     ]
@@ -308,7 +310,7 @@
                                 "name": "t&c",
                                 "custom": true,
                                 "element": {
-                                    "title": "I accept Terms & Conditions ",
+                                    "title": "ACCEPT_TERMS_CONDITIONS ",
                                     "widget": {
                                         "formlyConfig": {
                                             "type": "checkbox",
