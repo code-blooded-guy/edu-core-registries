@@ -14,8 +14,7 @@
                         "definition": "User",
                         "title": "USER_DETAILS",
                         "add": false,
-                        "edit": true,
-                        "editform":"user-setup",
+                        "edit": false,
                         "fields": {
                             "includes": ["*"]
                         }
