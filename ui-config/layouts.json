@@ -1,26 +1,24 @@
 {
     "type": "opensaberLayoutSchema",
     "version": "0.1",
-    "layouts": [
-        {
+    "layouts": [{
             "user": {
                 "api": "User",
                 "title": "MY_PROFILE",
                 "langKey": "elocker",
-                "headerName" : "identityDetails.fullName",
-                "subHeadername" : "contactDetails.address.state,contactDetails.address.city",
-                "blocks": [
-                    {
+                "headerName": "identityDetails.fullName",
+                "subHeadername": "contactDetails.address.state,contactDetails.address.city",
+                "blocks": [{
                         "definition": "User",
                         "title": "USER_DETAILS",
                         "add": false,
-                        "edit": true,
-                        "editform":"user-setup",
+                        "edit": false,
+                        "editform": "user-setup",
                         "fields": {
                             "includes": ["*"]
                         }
                     }
-                    
+
                 ]
             }
         },
@@ -28,17 +26,16 @@
             "student": {
                 "api": "/Student",
                 "title": "Student Profile",
-                "headerName" : "identityDetails.fullName",
+                "headerName": "identityDetails.fullName",
                 "langKey": "elocker",
-                "subHeadername" : "contactDetails.address.state,contactDetails.address.city",
-                "blocks": [
-                    {
+                "subHeadername": "contactDetails.address.state,contactDetails.address.city",
+                "blocks": [{
                         "definition": "Student",
                         "title": "Basic details",
                         "add": false,
                         "edit": true,
-                        
-                        "editform":"student-setup",
+
+                        "editform": "student-setup",
                         "fields": {
                             "includes": ["*"],
                             "excludes": ["educationDetails"]
@@ -59,24 +56,24 @@
                             "offset": 0
                         },
                         "fields": [{
-                                "title":"Course",
+                                "title": "Course",
                                 "field": "course"
                             },
                             {
-                                "title":"Certificate type",
+                                "title": "Certificate type",
                                 "field": "certificateType"
                             },
                             {
-                                "title":"Awarded on",
+                                "title": "Awarded on",
                                 "field": "awardedOn"
                             },
                             {
-                                "title":"Certificate ID",
+                                "title": "Certificate ID",
                                 "field": "osid"
                             }
                         ],
                         "button": {
-                            "redirectTo":"/Student/certificates/{{value}}",
+                            "redirectTo": "/Student/certificates/{{value}}",
                             "value": "osid"
                         }
                     }
