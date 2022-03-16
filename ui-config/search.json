@@ -7,84 +7,70 @@
          {
             "institute": {
                 "tab": "institute",
-                "tabTitle": "SEARCH_INSTITUTE",
+                "tabTitle": "Search Institute",
                 "api": "/Institute/search",
                 "activeTab": "active",
-                "privateFields": "InstituteOsConfig",
                 "filters": [
                     {
                         "key": "board",
                         "type": "text",
-                        "title": "BOARD",
+                        "title": "Board",
                         "propertyPath": "affiliation.board"
                     },
                     {
                         "key": "instituteName",
-                        "autocomplete": {
-                            "apiURL": "https://ndear.xiv.in/registry/api/v1/Institute/search",
-                            "body": {
-                                "filters": {
-                                    "instituteName": {
-                                        "startsWith": "{{value}}"
-                                    },
-                                    "affiliation._osState": {
-                                        "eq": "PUBLISHED"
-                                    }
-                                },
-                                "limit": 20,
-                                "offset": 0
-                            }
-                        },
-                        
-                        "title": "INSTITUTE_NAME",
+                        "type": "autocomplete",
+                        "title": "Institute Name",
                         "default": true,
+                        "defaultValue": "any",
                         "propertyPath": "instituteName",
-                        "placeholder" : "SEARCH_BY_INSTITUTE_NAME"
+                        "api": "/Institute/search",
+                        "placeholder" : "Enter Institute name"
                     },
                     {
                         "key": "state",
                         "type": "text",
-                        "title": "STATE",
+                        "title": "State",
                         "propertyPath": "address.state"
                     },
                     {
                         "key": "district",
                         "type": "text",
-                        "title": "DISTRICT",
+                        "title": "District",
                         "propertyPath": "address.district"
                     },
                     {
                         "key": "pincode",
                         "type": "text",
-                        "title": "PINCODE",
+                        "title": "Pincode",
                         "propertyPath": "address.pincode"
                     }
                 ],
                 "results": {
                     "fields": [
                         {
-                            "title" : "INSTITUTE_NAME", 
+                            "title" : "Institute Name", 
                             "property" : "instituteName"                          
                         },
                         {
 
-                            "title" : "DISTRICT", 
+                            "title" : "District", 
                             "property" : "address.district"  
                         },
                         {
 
-                            "title" : "STATE", 
+                            "title" : "State", 
                             "property" : "address.state"  
                         },
                         {
 
-                            "title" : "AFFILIATION_NUMBER", 
+                            "title" : "Affiliation Number", 
                             "property" : "affiliation.affiliationNumber" ,
                             "attest" : "_osState"
                         },
                         {
 
-                            "title" : "AFFILIATION_CLASS", 
+                            "title" : "Affiliation Classes", 
                             "property" : "affiliation.classes" 
                         }
                     ]
@@ -94,71 +80,165 @@
         {
             "teacher": {
                 "tab": "teacher",
-                "tabTitle": "SEARCH_TEACHER",
+                "tabTitle": "Search Teacher",
                 "api": "/Teacher/search",
-                "privateFields": "TeacherOsConfig",
                 "filters": [
-                    
+                    {
+                        "key": "board",
+                        "type": "text",
+                        "title": "Board",
+                        "propertyPath": "experience.board"
+                    },
                     {
                         "key": "teacherName",
                         "type": "text",
-                        "title": "TEACHER_NAME",
+                        "title": "Teacher Name",
                         "propertyPath": "identityDetails.fullName"
                     },
                     {
                         "key": "subject",
                         "type": "text",
-                        "title": "SUBJECT",
+                        "title": "Subject",
                         "propertyPath": "experience.subjects"
                     },
                     {
                         "key": "state",
                         "type": "text",
-                        "title": "STATE",
+                        "title": "State",
                         "propertyPath": "contactDetails.address.state"
                     },
                     {
                         "key": "district",
                         "type": "text",
-                        "title": "DISTRICT",
+                        "title": "District",
                         "propertyPath": "contactDetails.address.district"
                     },
                     {
                         "key": "pincode",
                         "type": "text",
-                        "title": "PINCODE",
+                        "title": "Pincode",
                         "propertyPath": "contactDetails.address.pincode"
                     }
                 ],
                 "results": {
                     "fields": [
                         {
-                            "title" : "TEACHER_NAME", 
+                            "title" : "Teacher Name", 
                             "property" : "identityDetails.fullName"                          
                         },
                         {
 
-                            "title" : "QUALIFICATION", 
-                            "property" : "academicQualifications.qualification"  
+                            "title" : "Qualification", 
+                            "property" : "qualification"  
                         },
                         {
 
-                            "title" : "SUBJECT", 
-                            "property" : "experience.subjects"  
+                            "title" : "Subject", 
+                            "property" : "subject"  
                         },
                         {
 
-                            "title" : "DISTRICT", 
+                            "title" : "District", 
                             "property" : "contactDetails.address.district"  
                         },
                         {
 
-                            "title" : "STATE", 
+                            "title" : "State", 
+                            "property" : "contactDetails.address.state"  
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "student": {
+                "tab": "student",
+                "tabTitle": "Search Student",
+                "api": "/Student/search",
+                "filters": [
+                    {
+                        "key": "board",
+                        "type": "text",
+                        "title": "Board",
+                        "propertyPath": "educationDetails.board"
+                    },
+                    {
+                        "key": "studentName",
+                        "type": "text",
+                        "title": "Student Name",
+                        "propertyPath": "identityDetails.fullName"
+                    },
+                    {
+                        "key": "state",
+                        "type": "text",
+                        "title": "State",
+                        "propertyPath": "contactDetails.address.state"
+                    },
+                    {
+                        "key": "district",
+                        "type": "text",
+                        "title": "District",
+                        "propertyPath": "contactDetails.address.district"
+                    },
+                    {
+                        "key": "pincode",
+                        "type": "text",
+                        "title": "Pincode",
+                        "propertyPath": "contactDetails.address.pincode"
+                    }
+                ],
+                "results1": {
+                    "fields": [
+                        "",
+                        "class",
+                        "",
+                        "state",
+                        "district"
+                    ]
+                },
+                "results": {
+                    "fields": [
+                        {
+                            "title" : "Student Name", 
+                            "property" : "identityDetails.fullName"                          
+                        },
+                        {
+
+                            "title" : "Class", 
+                            "property" : "class"  
+                        },
+                        {
+
+                            "title" : "Graduation Year", 
+                            "property" : "graduationYear"  
+                        },
+                        {
+
+                            "title" : "District", 
+                            "property" : "contactDetails.address.district"  
+                        },
+                        {
+
+                            "title" : "State", 
                             "property" : "contactDetails.address.state"  
                         }
                     ]
                 }
             }
         }
-    ]
+    ],
+    "conditions": {
+        "text": [
+            "is",
+            "is not",
+            "any"
+        ],
+        "date": [
+            "is",
+            ">=",
+            "<=",
+            "between",
+            "any"
+        ]
+    }
 }

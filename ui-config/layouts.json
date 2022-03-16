@@ -3,16 +3,32 @@
     "version": "0.1",
     "layouts": [
         {
+            "issuer": {
+                "api": "/Issuer",
+                "title": "Issuer Profile",
+                "cardNo" : "2",
+                "blocks": [
+                    {
+                        "definition": "Issuer",
+                        "title": "Document",
+                        "add": true,
+                        "addFormTitle" : "Add New Document",
+                        "addform":"add-document",
+                        "fields": {
+                            "includes": ["*"]
+                        }
+                    }
+                ]
+            }
+        },
+        {
             "institute": {
                 "api": "/Institute",
-                "title": "INSTITUTE_PROFILE",
-                "langKey" : "institute",
-                "headerName" : "instituteName",
-                "subHeadername" : "address.state,contactDetails.address.city",
+                "title": "Institute Profile",
                 "blocks": [
                     {
                         "definition": "Institute",
-                        "title": "INSTITUTE_DEATILS",
+                        "title": "Basic details",
                         "add": false,
                         "edit": true,
                         "editform":"institute-setup",
@@ -23,10 +39,10 @@
                     },
                     {
                         "definition": "Institute",
-                        "title": "AFFILIATION_DETAILS",
+                        "title": "Affiliation details",
                         "add": true,
                         "addform":"affiliation",
-                        "claimEdit": true,
+                        "edit": false,
                         "editform":"affiliation",
                         "multiple": true,
                         "fields": {
@@ -39,14 +55,11 @@
         {
             "teacher": {
                 "api": "/Teacher",
-                "title": "TEACHER_PROFILE",
-                "langKey" : "teacherStudent",
-                "headerName" : "identityDetails.fullName",
-                "subHeadername" : "contactDetails.address.state,contactDetails.address.city",
+                "title": "Teacher Profile",
                 "blocks": [
                     {
                         "definition": "Teacher",
-                        "title": "PERSONAL_DETAILS",
+                        "title": "Basic details",
                         "add": false,
                         "edit": true,
                         "editform":"teacher-setup",
@@ -57,11 +70,10 @@
                     },
                     {
                         "definition": "Teacher",
-                        "title": "PROFESSIONAL_EXPERIENCE",
+                        "title": "Experience details",
                         "add": true,
                         "addform":"teacher-experience",
-                        "editform":"teacher-experience",
-                        "claimEdit": true,
+                        "edit": false,
                         "multiple": true,
                         "fields": {
                             "includes": ["experience"]
@@ -69,11 +81,10 @@
                     },
                     {
                         "definition": "Teacher",
-                        "title": "EDUCATION",
+                        "title": "Academic Qualifications",
                         "add": true,
                         "addform":"teacher-education",
-                        "editform":"teacher-education",
-                        "claimEdit": true,
+                        "edit": false,
                         "multiple": true,
                         "fields": {
                             "includes": ["academicQualifications"]
@@ -85,14 +96,11 @@
         {
             "student": {
                 "api": "/Student",
-                "title": "STUDENT_PROFILE",
-                "langKey" : "teacherStudent",
-                "headerName" : "identityDetails.fullName",
-                "subHeadername" : "contactDetails.address.state,contactDetails.address.city",
+                "title": "Student Profile",
                 "blocks": [
                     {
                         "definition": "Student",
-                        "title": "BASIC_DETAILS",
+                        "title": "Basic details",
                         "add": false,
                         "edit": true,
                         "editform":"student-setup",
@@ -103,12 +111,10 @@
                     },
                     {
                         "definition": "Student",
-                        "title": "EDUCATION_DEATILS",
+                        "title": "Education details",
                         "add": true,
                         "addform":"student-education",
-                        "editform":"student-education",
                         "edit": false,
-                        "claimEdit": true,
                         "multiple": true,
                         "fields": {
                             "includes": ["educationDetails"]

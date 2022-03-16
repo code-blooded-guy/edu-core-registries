@@ -1,27 +1,26 @@
 {
     "type": "opensaberLayoutSchema",
     "version": "0.1",
-    "limit" : "15",
     "tables": [
         {
             "teacher-attestation": {
                 "api": "/Teacher/claims",
-                "title": "TEACHER_ATTESTATIONS",
+                "title": "Teacher Attestations",
                 "fields": [
                     {
                         "name": "createdAt",
-                        "title": "SUBMITTED_DATE",
+                        "title": "Submited Date",
                         "formate": "date"
                     },
                     {
                         "name": "requestorName",
-                        "title": "NAME"
+                        "title": "Name"
                     },
                     {   
                         "custom": true,
-                        "title": "ACTION",
-                        "buttonText": "ATTEST",
+                        "title": "Action",
                         "type": "button",
+                        "buttonText": "Attest",
                         "redirectTo": "/Teacher/attestation/teacher-attestation/:id"
                     }
                 ]
@@ -30,22 +29,21 @@
         {
             "institute-attestation": {
                 "api": "/Institute/claims",
-                "title": "INSTITUTE_ATTESTATIONS",
+                "title": "Institute Attestations",
                 "fields": [
                     {
                         "name": "createdAt",
-                        "title": "SUBMITTED_DATE",
-                        "formate": "date"
+                        "title": "Submited Date"
                     },
                     {
                         "name": "requestorName",
-                        "title": "NAME"
+                        "title": "Name"
                     },
                     {   
                         "custom": true,
-                        "title": "ACTION",
+                        "title": "Action",
                         "type": "button",
-                        "buttonText": "ATTEST",
+                        "buttonText": "Attest",
                         "redirectTo": "/Institute/attestation/institute-attestation/:id"
                     }
                 ]
@@ -54,22 +52,21 @@
         {
             "board-cbse-attestation": {
                 "api": "/board-cbse/claims",
-                "title": "CBSE_BOARD_ATTESTATIONS",
+                "title": "CBSE Board Attestations",
                 "fields": [
                     {
                         "name": "createdAt",
-                        "title": "SUBMITTED_DATE",
-                        "formate": "date"
+                        "title": "Submited Date"
                     },
                     {
                         "name": "requestorName",
-                        "title": "NAME"
+                        "title": "Name"
                     },
                     {   
                         "custom": true,
-                        "title": "ACTION",
+                        "title": "Action",
                         "type": "button",
-                        "buttonText": "ATTEST",
+                        "buttonText": "Attest",
                         "redirectTo": "/board-cbse/attestation/board-cbse-attestation/:id"
                     }
                 ]

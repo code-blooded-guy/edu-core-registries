@@ -3,15 +3,36 @@
     "version": "0.1",
     "headers": [
         {
-            "blank":{
-            }
-        },
-        {
             "default":{
                 "right":[
                     {
-                        "title": "LOGIN",
+                        "title": "Login",
                         "redirectTo": "/login"
+                    }
+                   
+                ]
+            }
+        },
+        {
+            "issuer":{
+                "left":[
+                    {
+                        "title": "Home",
+                        "redirectTo": "/dashboard"
+                    }
+                ]
+            }
+        },
+        {
+            "records":{
+                "left":[
+                    {
+                        "title": "Home",
+                        "redirectTo": "/dashboard"
+                    },
+                    {
+                        "title": "Document",
+                        "redirectTo": "/records"
                     }
                 ]
             }
@@ -20,19 +41,38 @@
             "institute": {
                 "left": [
                     {
-                        "title": "HOME",
+                        "title": "Home",
                         "redirectTo": "/profile/institute"
                     },
                     {
-                        "title": "ATTESTATIONS",
+                        "title": "Attestations",
                         "redirectTo": "/institute/attestation/institute-attestation"
                     }
                 ],
                 "right": [
                     {
-                        "title": "LOGOUT",
-                        "redirectTo": "/logout",
-                        "className" : "font-weight-bold"
+                        "image": "/assets/images/logout.png",
+                        "redirectTo": "/logout"
+                    }
+                ]
+            }
+        },
+        {
+            "issuer": {
+                "left": [
+                    {
+                        "title": "Home",
+                        "redirectTo": "/profile/issuer"
+                    },
+                    {
+                        "title": "Documents",
+                        "redirectTo": "/"
+                    }
+                ],
+                "right": [
+                    {
+                        "image": "/assets/images/logout.png",
+                        "redirectTo": "/logout"
                     }
                 ]
             }
@@ -41,19 +81,18 @@
             "teacher": {
                 "left": [
                     {
-                        "title": "HOME",
+                        "title": "Home",
                         "redirectTo": "/profile/teacher"
                     },
                     {
-                        "title": "ATTESTATIONS",
+                        "title": "Attestations",
                         "redirectTo": "/teacher/attestation/teacher-attestation"
                     }
                 ],
                 "right": [
                     {
-                        "title": "LOGOUT",
-                        "redirectTo": "/logout",
-                        "className" : "font-weight-bold"
+                        "image": "/assets/images/logout.png",
+                        "redirectTo": "/logout"
                     }
                 ]
             }
@@ -62,15 +101,14 @@
             "student": {
                 "left": [
                     {
-                        "title": "HOME",
+                        "title": "Home",
                         "redirectTo": "/profile/student"
                     }
                 ],
                 "right": [
                     {
-                        "title": "LOGOUT",
-                        "redirectTo": "/logout",
-                        "className" : "font-weight-bold"
+                        "image": "/assets/images/logout.png",
+                        "redirectTo": "/logout"
                     }
                 ]
             }
@@ -79,15 +117,14 @@
             "board-cbse": {
                 "left": [
                     {
-                        "title": "ATTESTATIONS",
+                        "title": "Attestations",
                         "redirectTo": "/profile/board-cbse"
                     }
                 ],
                 "right": [
                     {
-                        "title": "LOGOUT",
-                        "redirectTo": "/logout",
-                        "className" : "font-weight-bold"
+                        "image": "/assets/images/logout.png",
+                        "redirectTo": "/logout"
                     }
                 ]
             }
