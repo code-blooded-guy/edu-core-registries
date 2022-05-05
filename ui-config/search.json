@@ -21,7 +21,7 @@
                     {
                         "key": "instituteName",
                         "autocomplete": {
-                            "apiURL": "https://ndear.xiv.in/registry/api/v1/Institute/search",
+                            "apiURL": "https://skills.xiv.in/skills/api/v1/Institute/search",
                             "body": {
                                 "filters": {
                                     "instituteName": {

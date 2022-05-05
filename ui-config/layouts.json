@@ -70,7 +70,7 @@
                         "type": "passport",
                         "title": "My Certificates",
                         "multiple": true,
-                        "apiURL": "https://ndear.xiv.in/skills/api/v1/Certificates/search",
+                        "apiURL": "https://skills.xiv.in/skills/api/v1/Certificates/search",
                         "body": {
                             "filters": {
                                 "mobile": {
