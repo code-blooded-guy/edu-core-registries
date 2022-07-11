@@ -6,10 +6,7 @@
         },
         {
             "default": {
-                "left": [{
-                        "title": "ABOUT",
-                        "redirectTo": "/page/about"
-                    },
+                "left": [
                     {
                         "title": "TERMS_AND_CONDITIONS",
                         "redirectTo": "/page/terms-and-conditions"
@@ -30,10 +27,6 @@
                     {
                         "title": "BROWSE_DOCUMENT",
                         "redirectTo": "/User/documents/browse"
-                    },
-                    {
-                        "title": "ABOUT",
-                        "redirectTo": "/page/about"
                     },
                     {
                         "title": "TERMS_AND_CONDITIONS",
@@ -70,16 +63,8 @@
                         "redirectTo": "/User/documents/browse"
                     },
                     {
-                        "title": "ABOUT",
-                        "redirectTo": "/page/about"
-                    },
-                    {
                         "title": "TERMS_AND_CONDITIONS",
                         "redirectTo": "/page/terms-and-conditions"
-                    },
-                    {
-                        "title": "FAQ",
-                        "redirectTo": "/faq"
                     }
 
                 ],
