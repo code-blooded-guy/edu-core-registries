@@ -27,6 +27,7 @@
                         "addform":"course",
                         "claimEdit": true,
                         "editform":"course",
+                        "canRaiseClaim" : false,
                         "multiple": true,
                         "fields": {
                             "includes": ["courses"]
@@ -39,6 +40,7 @@
                         "addform":"skill",
                         "claimEdit": true,
                         "editform":"skill",
+                        "canRaiseClaim" : false,
                         "multiple": true,
                         "fields": {
                             "includes": ["skills"]
