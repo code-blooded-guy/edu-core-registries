@@ -187,7 +187,7 @@
             "issue": {
                 "api": "/Certificates",
                 "type": "passport:Student",
-                "header": "institute",
+                "header": "issue",
                 "title": "Issue Certificate",
                 "redirectTo": "/profile/institute",
                 "fieldsets": [

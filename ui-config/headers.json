@@ -39,54 +39,23 @@
             }
         },
         {
-            "teacher": {
+            "issue" : {
                 "left": [
                     {
                         "title": "Home",
-                        "redirectTo": "/profile/teacher"
+                        "redirectTo": "/profile/institute"
                     },
                     {
-                        "title": "Attestations",
-                        "redirectTo": "/teacher/attestation/teacher-attestation"
+                        "title": "Issue certificate",
+                        "redirectTo": "/form/issue",
+                        "activeTab" : "active"
                     }
                 ],
                 "right": [
                     {
-                        "image": "/assets/images/logout.png",
-                        "redirectTo": "/logout"
-                    }
-                ]
-            }
-        },
-        {
-            "student": {
-                "left": [
-                    {
-                        "title": "Home",
-                        "redirectTo": "/profile/student"
-                    }
-                    
-                ],
-                "right": [
-                    {
-                        "image": "/assets/images/logout.png",
-                        "redirectTo": "/logout"
-                    }
-                ]
-            }
-        },
-        {
-            "board-cbse": {
-                "left": [
-                    {
-                        "title": "Attestations",
-                        "redirectTo": "/profile/board-cbse"
-                    }
-                ],
-                "right": [
-                    {
-                        "image": "/assets/images/logout.png",
-                        "redirectTo": "/logout"
+                        "title": "Logout",
+                        "redirectTo": "/logout",
+                        "className" : "font-weight-bold"
                     }
                 ]
             }
